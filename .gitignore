@@ -9,6 +9,10 @@
 
 # dependencies
 /node_modules
+.firebaserc
+firebase.json
+package-lock.json
+.firebase
 
 # profiling files
 chrome-profiler-events*.json
@@ -40,6 +44,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+/public
 
 # System Files
 .DS_Store

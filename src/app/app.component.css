@@ -1,0 +1,68 @@
+p {
+  font-family: Lato;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 1rem;
+  height: auto;
+}
+
+.custom-buttons {
+  background-color: white;
+  margin: 1rem 0;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.custom-icon {
+  margin-right: 0.8rem;
+}
+
+.custom-button-text {
+  align-items: center;
+  color: white;
+}
+
+.create-text-font {
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.title-text-font {
+  font-size: 0.8rem;
+}
+
+.margin-right {
+  margin-right: 0.2rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .avatar {
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .avatar {
+    width: 15vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .create-text-font {
+    font-size: 0.6rem;
+  }
+}
