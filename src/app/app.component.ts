@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'linktree';
+  public screenWidth: number | undefined;
+  constructor() {
+    this.getScreenSize();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(event?: any) {
+    this.screenWidth = window.innerWidth;
+  }
+
   public buttonData: any[] = [
     {
       icon: `<svg

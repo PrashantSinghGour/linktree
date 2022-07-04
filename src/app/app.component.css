@@ -49,6 +49,10 @@ div {
   margin-right: 0.2rem !important;
 }
 
+.h-100vh {
+  height: 100vh;
+}
+
 @media screen and (max-width: 768px) {
   .avatar {
     width: 30vw;

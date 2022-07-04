@@ -1,10 +1,11 @@
 <div class="container">
-  <div class="col-12 py-2">
-    <div class="text-center">
+  <div class=""
+    [ngClass]="{'d-flex flex-row h-100vh': screenWidth && screenWidth > 425, 'col-12 py-2': screenWidth && screenWidth <= 425}">
+    <div class="text-center" [ngClass]="{'m-auto': screenWidth && screenWidth > 425}">
       <img src="../assets/images/avatar.jpg" alt="img_avatar" class="avatar mt-4" />
       <div class="text-white">@PrashantSingh</div>
     </div>
-    <div>
+    <div [ngClass]="{'m-auto col-6': screenWidth && screenWidth > 425}">
       <div class="p-2 custom-buttons cursor-pointer" *ngFor="let item of buttonData" (click)="openLink(item?.link)">
         <div class="row">
           <div class="align-self-center custom-icon col-1" [innerHtml]="item?.icon | safe: 'html'"></div>
@@ -14,12 +15,11 @@
         </div>
       </div>
     </div>
-    <div class="col-12">
-      <div class="custom-button-text create-text-font d-flex">
-        <div class="margin-right">Created with ❤️</div>
-        <div class="">by Prashant Singh</div>
-      </div>
-
+  </div>
+  <div class="col-12">
+    <div class="custom-button-text create-text-font d-flex">
+      <div class="margin-right">Created with ❤️</div>
+      <div class="">by Prashant Singh</div>
     </div>
   </div>
 </div>
